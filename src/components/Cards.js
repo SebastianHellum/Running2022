@@ -20,6 +20,7 @@ function Cards() {
             height="140"
             image={item.image}
             alt={item.name}
+            borderRadius="5px"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -30,7 +31,13 @@ function Cards() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" href={item.link}>
+            <Button
+              size="large"
+              variant="cotained"
+              style={{ marginLeft: "30%", marginRight: "30%" }}
+              href={item.link}
+              target="_blank"
+            >
               Flere detaljer
             </Button>
           </CardActions>
