@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={"./img/beer.png"} className="App-logo" alt="logo" />
-        <h1>Løpemål 2022 👟</h1>
+        <img src={"./img/running.png"} className="App-logo" alt="logo" />
+        <h1>Løpemål 2022</h1>
         <ProgressBar max={1000} value={9} />
       </header>
       <main>
