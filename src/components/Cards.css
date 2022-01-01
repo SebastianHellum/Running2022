@@ -1,0 +1,27 @@
+.flexParent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .flexparent > div {
+    flex: 1 0 21%;
+  }
+}
+
+.flexParent > div {
+  width: 300px;
+  height: 340px;
+  margin: 10px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  padding: 10px;
+  margin: 40px 20px;
+}
+
+input {
+  width: 50px;
+  text-align: center;
+}
