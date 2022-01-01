@@ -7,9 +7,20 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./Cards.css";
+import Dialog from "@material-ui/core/Dialog";
 
 function Cards() {
   const [data, setData] = useState(CardData);
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const cartProducts = () => (
     <div className="flexParent">
@@ -18,7 +29,7 @@ function Cards() {
           <CardMedia
             component="img"
             height="140"
-            image={item.image}
+            image={item.mapImage}
             alt={item.name}
             borderRadius="5px"
           />
@@ -32,13 +43,20 @@ function Cards() {
           </CardContent>
           <CardActions>
             <Button
-              size="large"
+              size="small"
               variant="contained"
               style={{ marginLeft: "auto", marginRight: "auto" }}
               href={item.link}
               target="_blank"
             >
               Flere detaljer
+            </Button>
+            <Button
+              size="small"
+              variant="contained"
+              style={{ marginLeft: "auto", marginRight: "auto" }}
+            >
+              Bilde fra turen
             </Button>
           </CardActions>
         </Card>
