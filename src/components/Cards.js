@@ -24,17 +24,17 @@ function Cards() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {item.name}
+              {item.name} - {item.date}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="h6" color="text.secondary">
               {item.distance}km {item.weather}
             </Typography>
           </CardContent>
           <CardActions>
             <Button
               size="large"
-              variant="cotained"
-              style={{ marginLeft: "30%", marginRight: "30%" }}
+              variant="contained"
+              style={{ marginLeft: "auto", marginRight: "auto" }}
               href={item.link}
               target="_blank"
             >
