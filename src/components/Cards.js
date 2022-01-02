@@ -7,22 +7,28 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./Cards.css";
-import Dialog from "@material-ui/core/Dialog";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
 
 function Cards() {
   const [data, setData] = useState(CardData);
 
   const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const cartProducts = () => (
+  const cards = () => (
     <div className="flexParent">
       {data.map((item, i) => (
         <Card sx={{ maxWidth: 345 }}>
@@ -51,20 +57,42 @@ function Cards() {
             >
               Flere detaljer
             </Button>
-            <Button
-              size="small"
-              variant="contained"
-              style={{ marginLeft: "auto", marginRight: "auto" }}
-            >
-              Bilde fra turen
-            </Button>
+            <div>
+              <Button variant="contained" size="small" onClick={handleOpen}>
+                Bilde fra turen
+              </Button>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box
+                  style={{
+                    backgroundImage: `url(${item.image})`,
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    width: "100%",
+                    maxWidth: "350px",
+                    height: "100%",
+                    maxHeight: "500px",
+                    transform: "translate(-50%, -50%)",
+                    backgroundSize: "100% 100%",
+                    border: "2px solid #000",
+                    boxShadow: 100,
+                    p: 4,
+                  }}
+                ></Box>
+              </Modal>
+            </div>
           </CardActions>
         </Card>
       ))}
     </div>
   );
 
-  return <div>{cartProducts()}</div>;
+  return <div>{cards()}</div>;
 }
 
 export default Cards;
