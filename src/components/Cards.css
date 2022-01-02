@@ -25,18 +25,3 @@ input {
   width: 50px;
   text-align: center;
 }
-
-.cardmedia {
-  width: 100%;
-}
-
-.gallery-wrapper .image-wrapper a {
-  padding: 0.5em;
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transition: all 200ms ease-in-out;
-  text-align: center;
-}
