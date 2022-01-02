@@ -1,11 +1,13 @@
 import React, { useState, useCallback } from "react";
 import "./ImageSection.css";
 import ImageViewer from "react-simple-image-viewer";
+import Images from "./Images";
 
 function ImageSection() {
+  const [images, setData] = useState(Images);
+
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const images = ["./img/1.jpg", "./img/1.jpg", "./img/1.jpg", "./img/1.jpg"];
 
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);
