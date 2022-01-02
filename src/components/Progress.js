@@ -9,7 +9,6 @@ const Container = Styled.div`
 
   progress[value] {
     width: "${(props) => props.width}";
-
   } 
 `;
 

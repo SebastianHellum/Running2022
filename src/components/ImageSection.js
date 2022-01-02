@@ -1,9 +1,12 @@
 import React, { useState, useCallback } from "react";
+//Import CSS
 import "./ImageSection.css";
+//Import ImageViewer
 import ImageViewer from "react-simple-image-viewer";
 import Images from "./Images";
 
 function ImageSection() {
+  //Fetching images from Images.js and mapping it to the app
   const [images, setData] = useState(Images);
 
   const [currentImage, setCurrentImage] = useState(0);

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+//Import CSS
 import "./App.css";
+//Import components
 import ProgressBar from ".//components/Progress";
 import Cards from "./components/Cards";
 import AnchorLink from "react-anchor-link-smooth-scroll";

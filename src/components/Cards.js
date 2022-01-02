@@ -1,4 +1,7 @@
 import React, { useState, useCallback } from "react";
+//Import CSS
+import "./Cards.css";
+//Import MUI
 import { Card } from "@mui/material";
 import CardData from "./Data";
 import CardActions from "@mui/material/CardActions";
@@ -6,11 +9,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import "./Cards.css";
-import { render } from "react-dom";
-import ImageViewer from "react-simple-image-viewer";
 
 function Cards() {
+  //Fetching data from Data.js and mapping it to the app
   const [data, setData] = useState(CardData);
 
   const cards = () => (
