@@ -3,6 +3,7 @@ import "./App.css";
 import ProgressBar from ".//components/Progress";
 import Cards from "./components/Cards";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import ImageSection from "./components/ImageSection";
 
 function App() {
   return (
@@ -15,8 +16,15 @@ function App() {
           <div class="arrow"></div>
         </AnchorLink>
       </header>
-      <section id="cards">
+      <section className="App-header" id="cards">
         <Cards />
+        <AnchorLink href="#imageViewer">
+          <div class="arrow"></div>
+        </AnchorLink>
+      </section>
+      <section id="imageViewer">
+        <h1>Skryteveggen</h1>
+        <ImageSection />
       </section>
     </div>
   );

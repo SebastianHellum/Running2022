@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Card } from "@mui/material";
 import CardData from "./Data";
 import CardActions from "@mui/material/CardActions";
@@ -7,26 +7,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./Cards.css";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
+import { render } from "react-dom";
+import ImageViewer from "react-simple-image-viewer";
 
 function Cards() {
   const [data, setData] = useState(CardData);
-
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 400,
-    border: "2px solid #000",
-    boxShadow: 24,
-    p: 4,
-  };
 
   const cards = () => (
     <div className="flexParent">
@@ -37,7 +22,7 @@ function Cards() {
             height="140"
             image={item.mapImage}
             alt={item.name}
-            borderRadius="5px"
+            style={{ borderRadius: "5%" }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -57,35 +42,6 @@ function Cards() {
             >
               Flere detaljer
             </Button>
-            <div>
-              <Button variant="contained" size="small" onClick={handleOpen}>
-                Bilde fra turen
-              </Button>
-              <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box
-                  style={{
-                    backgroundImage: `url(${item.image})`,
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    width: "100%",
-                    maxWidth: "350px",
-                    height: "100%",
-                    maxHeight: "500px",
-                    transform: "translate(-50%, -50%)",
-                    backgroundSize: "100% 100%",
-                    border: "2px solid #000",
-                    boxShadow: 100,
-                    p: 4,
-                  }}
-                ></Box>
-              </Modal>
-            </div>
           </CardActions>
         </Card>
       ))}
