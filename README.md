@@ -3,7 +3,7 @@
 This project is meant for tracking and keeping the motivation for running throughout 2022. Hopefully the progressbar will be full, and a lot of memories is made in the meantime. The application is made in react⚛️
 
 #### Test in your browser
-https://trening2022.netlify.app/ \
+<a href="https://trening2022.netlify.app/" target="_blank">trening2022.netlify.app</a>\
 This version will be updated whenever I go for a new run. 👟 
 
 #### Download
