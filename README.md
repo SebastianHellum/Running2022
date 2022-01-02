@@ -1,4 +1,4 @@
-# Trening2022
+# Running2022
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c7d954d6-0577-49c3-9f75-6f9132ba3b9e/deploy-status)](https://trening2022.netlify.app/) \
 This project is meant for tracking and keeping the motivation for running throughout 2022. Hopefully the progressbar will be full, and a lot of memories is made in the meantime. The application is made in react⚛️
 
