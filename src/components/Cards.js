@@ -27,7 +27,10 @@ function Cards() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {item.name} - {item.date}
+              {item.name}
+            </Typography>
+            <Typography gutterBottom variant="h6" component="div">
+              {item.date}
             </Typography>
             <Typography variant="h6" color="text.secondary">
               {item.distance}km {item.weather}
@@ -37,7 +40,10 @@ function Cards() {
             <Button
               size="small"
               variant="contained"
-              style={{ marginLeft: "auto", marginRight: "auto" }}
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
               href={item.link}
               target="_blank"
             >

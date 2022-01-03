@@ -14,7 +14,7 @@
 
 .flexParent > div {
   width: 300px;
-  height: 300px;
+  height: 350px;
   margin: 10px;
   border-radius: 5%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);

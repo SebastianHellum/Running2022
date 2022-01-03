@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={"./img/running.png"} className="App-logo" alt="logo" />
         <h1>Løpemål 2022</h1>
-        <ProgressBar max={1000} value={9} />
+        <ProgressBar max={1000} value={16} />
         <AnchorLink href="#cards">
           <div class="arrow"></div>
         </AnchorLink>
