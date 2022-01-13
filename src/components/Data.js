@@ -1,5 +1,13 @@
 const CardData = [
   {
+    name: "Langvannet",
+    mapImage: "./img/langvannet.png",
+    date: "12.01.2022",
+    distance: 5,
+    link: "https://www.strava.com/activities/6511305725",
+    weather: "2°C ☀️",
+  },
+  {
     name: "Sørum fritidsgård",
     mapImage: "./img/sorumFritidsgard.png",
     date: "03.01.2022",
