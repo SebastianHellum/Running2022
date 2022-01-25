@@ -1,5 +1,13 @@
 const CardData = [
   {
+    name: "Lørenskog Stasjon",
+    mapImage: "./img/lorenskogStasjon.png",
+    date: "24.01.2022",
+    distance: 7,
+    link: "https://www.strava.com/activities/6547653960",
+    weather: "2°C 🌤️",
+  },
+  {
     name: "Sørum fritidsgård",
     mapImage: "./img/sorumFritidsgard.png",
     date: "22.01.2022",
