@@ -55,7 +55,7 @@ div.arrow::before {
 }
 
 div.arrow:hover::before {
-  border-color: #e08836;
+  border-color: #1d8fec;
   transform: scale(1.2);
 }
 
