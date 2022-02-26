@@ -2,7 +2,7 @@ const CardData = [
   {
     name: "Strømmen",
     mapImage: "./img/strommen.png",
-    date: "19.02.2022",
+    date: "23.02.2022",
     distance: 10,
     link: "https://www.strava.com/activities/6725696572",
     weather: "5°C ☀️",
