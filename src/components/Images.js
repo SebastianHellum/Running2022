@@ -1,4 +1,5 @@
 const Images = [
+  "./img/9.jpg",
   "./img/8.jpg",
   "./img/7.jpg",
   "./img/6.jpg",
