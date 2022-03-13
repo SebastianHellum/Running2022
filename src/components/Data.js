@@ -1,5 +1,13 @@
 const CardData = [
   {
+    name: "Strømmen utvidet",
+    mapImage: "./img/strommen.png",
+    date: "05.03.2022",
+    distance: 13,
+    link: "https://www.strava.com/activities/6811986838",
+    weather: "6°C ☀️",
+  },
+  {
     name: "Strømmen",
     mapImage: "./img/strommen.png",
     date: "09.03.2022",
