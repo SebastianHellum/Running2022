@@ -1,5 +1,13 @@
 const CardData = [
   {
+    name: "Sørum fritidsgård",
+    mapImage: "./img/sorumFritidsgard.png",
+    date: "26.03.2022",
+    distance: 8,
+    link: "https://www.strava.com/activities/6883433035",
+    weather: "5°C 🌤️",
+  },
+  {
     name: "Strømmen utvidet",
     mapImage: "./img/strommen.png",
     date: "23.03.2022",
