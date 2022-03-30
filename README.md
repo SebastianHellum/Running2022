@@ -1,5 +1,5 @@
 # Running2022
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c7d954d6-0577-49c3-9f75-6f9132ba3b9e/deploy-status)](https://trening2022.netlify.app/) \
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7d954d6-0577-49c3-9f75-6f9132ba3b9e/deploy-status)](https://trening2022.netlify.app/) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) \
 This project is meant for tracking and keeping the motivation for running throughout 2022. Hopefully the progressbar will be full, and a lot of memories is made in the meantime. The application is made in react⚛️
 
 #### Test in your browser
