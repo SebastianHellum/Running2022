@@ -1,5 +1,21 @@
 const CardData = [
   {
+    name: "Sørum fritidsgård",
+    mapImage: "./img/sorumFritidsgard.png",
+    date: "08.05.2022",
+    distance: 8,
+    link: "https://www.strava.com/activities/7105929208",
+    weather: "7°C ⛅",
+  },
+  {
+    name: "Langvannet",
+    mapImage: "./img/langvannet.png",
+    date: "07.05.2022",
+    distance: 5,
+    link: "https://www.strava.com/activities/7100542664",
+    weather: "8°C ☀️",
+  },
+  {
     name: "Lørenskog Stasjon",
     mapImage: "./img/lorenskogStasjon.png",
     date: "05.05.2022",
