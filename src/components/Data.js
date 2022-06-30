@@ -1,5 +1,21 @@
 const CardData = [
   {
+    name: "Strømmen",
+    mapImage: "./img/strommen.png",
+    date: "30.06.2022",
+    distance: 10,
+    link: "https://www.strava.com/activities/7392248438",
+    weather: "26°C ☀️",
+  },
+  {
+    name: "Lørenskog VGS",
+    mapImage: "./img/lorenskogvgs.png",
+    date: "27.06.2022",
+    distance: 6,
+    link: "https://www.strava.com/activities/7376027705",
+    weather: "21°C 🌧️",
+  },
+  {
     name: "Lørenskog Stasjon",
     mapImage: "./img/lorenskogStasjon.png",
     date: "26.06.2022",
