@@ -1,5 +1,37 @@
 const CardData = [
   {
+    name: "Lørenskog VGS",
+    mapImage: "./img/lorenskogvgs.png",
+    date: "27.07.2022",
+    distance: 6,
+    link: "https://www.strava.com/activities/7535670003",
+    weather: "23°C ⛅",
+  },
+  {
+    name: "Lørenskog Stasjon",
+    mapImage: "./img/lorenskogStasjon.png",
+    date: "26.07.2022",
+    distance: 7,
+    link: "https://www.strava.com/activities/7532359155",
+    weather: "22°C ⛅",
+  },
+  {
+    name: "Strømmen",
+    mapImage: "./img/strommen.png",
+    date: "25.07.2022",
+    distance: 10,
+    link: "https://www.strava.com/activities/7525338818",
+    weather: "20°C 🌧️",
+  },
+  {
+    name: "Langvannet",
+    mapImage: "./img/langvannet.png",
+    date: "20.07.2022",
+    distance: 5,
+    link: "https://www.strava.com/activities/7498935134",
+    weather: "22°C ☀️",
+  },
+  {
     name: "Strømmen",
     mapImage: "./img/strommen.png",
     date: "19.07.2022",
@@ -10,7 +42,7 @@ const CardData = [
   {
     name: "Lørenskog VGS",
     mapImage: "./img/lorenskogvgs.png",
-    date: "19.07.2022",
+    date: "18.07.2022",
     distance: 6,
     link: "https://www.strava.com/activities/7487808248",
     weather: "23°C ⛅",
