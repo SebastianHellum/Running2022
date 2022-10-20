@@ -1,5 +1,21 @@
 const CardData = [
   {
+    name: "Langvannet",
+    mapImage: "./img/langvannet.png",
+    date: "20.10.2022",
+    distance: 8,
+    link: "https://www.strava.com/activities/7990814553",
+    weather: "2°C ☁️",
+  },
+  {
+    name: "Lørenskog Stasjon",
+    mapImage: "./img/lorenskogStasjon.png",
+    date: "18.10.2022",
+    distance: 9,
+    link: "https://www.strava.com/activities/7983448509",
+    weather: "3°C 🌙",
+  },
+  {
     name: "Lørenskog VGS",
     mapImage: "./img/lorenskogvgs.png",
     date: "16.10.2022",
